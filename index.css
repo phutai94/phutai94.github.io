@@ -1,0 +1,145 @@
+@font-face {
+    font-family: Canda-Tawa-Cute;
+    src: url(./2787100-canda-tawa-cute-font/TTF/Canda\ Tawa\ Regular.ttf);
+}
+
+body {
+    color: white;
+}
+
+.container-1 {
+    position: relative;
+    background-image: url('./background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 932px;
+}
+
+.top-text > span {
+    font-family: Canda-Tawa-Cute;
+    font-size: 40px;
+    color: white;
+}
+
+.bottom-text > span {
+    font-size: 35px;
+    color: white;
+}
+
+.top-text {
+    position: absolute;
+    top: 98px;
+    right: 40px;
+    text-align: center;
+}
+
+.bottom-text {
+    position:absolute;
+    bottom: 206px;
+    right: 130px;
+}
+
+.container-2 {
+    position: relative;
+    background-image: url('./background-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 932px;
+    text-align: center;
+    margin-top: -1px;
+}
+.text {
+    position: absolute;
+    top: 240px;
+    right: 58px;
+    width: 300px;
+    font-weight: 100;
+    text-align: center;
+    font-size: 16px;
+}
+.video {
+
+}
+.container-3 {
+    position: relative;
+    background-image: url('./background-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin-top: -1px;
+    display:flex;
+    flex-direction: row;
+    gap: 4px;
+    padding:4px;
+}
+
+.images-left {
+    width: 50%;
+    height: auto;
+}
+
+.images-right {
+    width: 50%;
+    height: auto;
+}
+
+.images-left > img, .images-right > img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+.video {
+    padding-top: 100px;
+}
+
+.heart-icon {
+    width: 104px;
+    position: absolute;
+    bottom: 47px;
+    right: calc(50% - 50px);
+}
+
+.zoom-in-out-element {
+    animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        scale: 100%;
+    }
+
+    50% {
+        scale: 150%;
+    }
+
+    100% {
+        scale: 100%;
+    }
+}
+
+
+.slide-right {
+    transform: translateX(-100px);
+    transition: transform 2s ease-out;
+}
+
+.slide-right.animate-slide {
+
+    transform: translateX(0);
+}
+
+.slide-left.animate-slide {
+    transform: translateX(0);
+}
+
+.slide-left {
+    transform: translateX(100px);
+    transition: transform 2s ease-out;
+}
+
+
+

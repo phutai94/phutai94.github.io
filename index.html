@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container-2">
+    </div>
+    <div class="top-text">
+        <span>HAPPY BIRTHDAY <br> MY LOVE
+        </span>
+    </div>
+    <div class="text">
+        <p class="">
+            Hôm nay là một ngày thật đặc biệt, ngày mà một thiên thần xinh đẹp đã đến với thế giới này và mang đến niềm vui cho rất nhiều người, đặc biệt là anh. Anh cảm thấy mình thật may mắn vì được có em bên cạnh, được yêu thương và chăm sóc cho em mỗi ngày.
+
+            Em biết không, từ khi có em, cuộc sống của anh trở nên rực rỡ và ý nghĩa hơn bao giờ hết. Em là ánh nắng ấm áp giữa những ngày mưa, là động lực để anh cố gắng mỗi ngày. Nụ cười của em làm anh quên đi mọi mệt mỏi, ánh mắt em khiến anh say mê, và trái tim em chính là nơi anh luôn muốn hướng về.
+            
+            Trong ngày đặc biệt này, anh không chỉ muốn chúc em thêm một tuổi mới mà còn mong em luôn vui vẻ, hạnh phúc và gặt hái được những điều tốt đẹp nhất trong cuộc sống. Dù có bất cứ khó khăn nào, anh cũng sẽ luôn ở bên cạnh, nắm chặt tay em và cùng em vượt qua.
+            
+            Chúc em luôn xinh đẹp, đáng yêu và tràn đầy năng lượng như bây giờ. Hãy sống thật hạnh phúc, vì em xứng đáng có được tất cả những điều tốt đẹp nhất!
+            
+            Cảm ơn em vì đã đến bên anh, yêu anh và cùng anh tạo nên những kỷ niệm tuyệt vời. Chúc mừng sinh nhật em, tình yêu của anh! 🎂🎁💖
+            
+            Anh yêu em! ❤️
+        </p>
+    </div>
+    <div class="heart-icon ">
+        <svg style="width: 100px;
+            height:100px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-balloon-heart zoom-in-out-element" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398" />
+        </svg>
+    </div>
+    </div>
+    <div class="container-3">
+        <div class="images-left">
+            <img class="slide-right" src="./anhvaem.jpg">
+            abc
+            <img class="slide-right" src="./fa15e773-b61f-4f09-b371-e998e744606a.jpg">
+            <img class="slide-right" src="./da646350-895f-4b37-9ffb-ad3eed8c4814.jpg">
+        </div>
+
+        <div class="images-right">
+            <img class="slide-left" src="./87e9c6db-6f42-4824-8587-1df2abc97952 (1).jpg">
+            <img class="slide-left" src="./29deccd9-947a-427c-9f74-94884e3110ff.jpg">
+            <img class="slide-left" src="./98e391a2-93a2-43af-8e14-eb6444e29c0d.jpg">
+        </div>
+    </div>
+    <div  class="video">
+        <video controls="control" width="400" height="300">
+            <source src="./122.mp4" type="video/mp4" />
+       </video>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            // Lấy tất cả các phần tử có class .slide-left
+            const elements = document.querySelectorAll('.slide-left');
+
+            elements.forEach(function (element) {
+                const rect = element.getBoundingClientRect();
+
+                // Kiểm tra nếu phần tử xuất hiện trong viewport
+                if (rect.bottom >= 0 && rect.top <= window.innerHeight) {
+                    // Thêm class để kích hoạt hoạt ảnh
+                    element.classList.add('animate-slide');
+                } else {
+                    // Nếu không trong viewport, tạm dừng hoạt ảnh (nếu cần)
+                    element.classList.remove('animate-slide');
+                }
+            });
+
+            const elementsRight = document.querySelectorAll('.slide-right');
+
+            elementsRight.forEach(function (element) {
+                const rect = element.getBoundingClientRect();
+
+                // Kiểm tra nếu phần tử xuất hiện trong viewport
+                if (rect.bottom >= 0 && rect.top <= window.innerHeight) {
+                    // Thêm class để kích hoạt hoạt ảnh
+                    element.classList.add('animate-slide');
+                } else {
+                    // Nếu không trong viewport, tạm dừng hoạt ảnh (nếu cần)
+                    element.classList.remove('animate-slide');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
