@@ -5,6 +5,7 @@
 
 body {
     color: white;
+    overflow-x: hidden;
 }
 
 .container-1 {
@@ -74,6 +75,7 @@ body {
     flex-direction: row;
     gap: 4px;
     padding:4px;
+    overflow: hidden;
 }
 
 .images-left {
